@@ -12,7 +12,7 @@
 #
 ## JBIJPPTPL
 
-name: Build
+name: Build 1
 on: [ pull_request ]
 
 jobs:
