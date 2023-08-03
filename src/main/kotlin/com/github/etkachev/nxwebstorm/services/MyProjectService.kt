@@ -70,10 +70,11 @@ class MyProjectService(private val project: Project) {
 
   private val isNx11OrAbove: Boolean
     get() = this.nxCliVersion != null && this.nxCliVersion!!.major >= 11
-
+  
   val defaultCustomSchematicsLocation: String
-    get() = if (this.isNx11OrAbove) "/tools/generators" else "/tools/schematics"
-
+    get() =  "/tools/workspace-plugin/src/generators"
+  
+  
   /**
    * root directory at which your nx monorepo resides within open project
    */
